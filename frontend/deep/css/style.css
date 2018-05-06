@@ -42,3 +42,16 @@ body {
     padding-top: 8px;
     width: 40px;
 }
+
+.footer {
+    background-color: #3B5998;
+    color: #FFF;
+    border-top-color: #f5f5f5;
+    border-top-style: solid;
+    border-top-width: 5px;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #3B5998;
+}
