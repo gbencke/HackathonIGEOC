@@ -1,0 +1,164 @@
+validacao_whatsapp {
+	cpfs: {[
+	"",""
+    ]},
+	timeout : "2",
+	follow: "2",
+	eventos: {
+		["tem whatsapp","nao tem whatsapp","timeout"]
+	}
+}
+
+envio_sms_receptivo {
+	cpfs: {[
+	"",""
+    ]},
+	timeout : "72",
+	follow: "36",
+	eventos: {
+		["ligou no receptivo", "telefone invalidado", "telefone validado","timeout"]
+	}
+}
+
+envio_sms_multicanalidade {
+	cpfs: {[
+	"",""
+    ]},
+	timeout : "72",
+	eventos: {
+		["adicionou no whats","enviou e-mail","fechou acordo no site","timeout"]
+	}
+}
+
+indicou_preferencia_de_contato {
+	cpfs: {[
+	"",""
+    ]},
+	timeout : "72",
+	eventos: {
+		["adicionou no whats","enviou e-mail","fechou acordo no site","timeout"]
+	}
+}
+
+discador {
+	cpfs: {[
+	"",""
+    ]},
+    timeout: "120",
+    follow: "24",
+    eventos: {
+    	["atendimento operacional","telefone deslocalizado","timeout"]
+    }
+}
+
+atendimento_operacional_telefonico {
+	cpfs: {[
+	"",""
+    ]},
+    timeout: "120",
+    follow: "24",
+    eventos: {
+    	["contato produtivo","desconhece","timeout"]
+    }
+}
+
+atendimento_operacional_whatsapp {
+	cpfs: {[
+	"",""
+    ]},
+    timeout: "120",
+    follow: "24",
+    eventos: {
+    	["contato produtivo","desconhece","timeout"]
+    }
+}
+
+atendimento_operacional_email {
+	cpfs: {[
+	"",""
+    ]},
+    timeout: "72",
+    follow: "24",
+    eventos: {
+    	["contato produtivo","desconhece","timeout"]
+    }
+}
+
+contato_produtivo {
+	cpfs: {[
+	"",""
+    ]},
+    timeout: "120",
+    follow: "48",
+    eventos: {
+    	["fechou acordo","pediu retorno","nao vai pagar","timeout"]
+    }	
+}
+
+fechou_acordo {
+	cpfs: {[
+	"",""
+    ]},
+    timeout: "12",
+    follow: "12",
+    eventos : {
+    	["boleto enviado","boleto nao enviado","timeout"]
+    }	
+}
+
+boleto_enviado {
+	cpfs: {[
+	"",""
+    ]},
+    timeout:"120",
+    follow: "120",
+    eventos: {
+    	["pagou","nao pagou","timeout"]
+    }
+
+}
+
+pagamento {
+	cpfs: {[
+	"",""
+    ]},
+    timeout:"0",
+    follow: "0",
+    eventos: {
+    	["fim!"]
+    }
+}
+
+higienizacao {
+	cpfs: {[
+	"",""
+    ]},
+    timeout:"120",
+    follow: "48",
+    eventos: {
+    	["retornou com telefones","nao retornou com telefones","timeout"]
+    }
+}
+
+incobravel {
+	cpfs: {[
+	"",""
+    ]},
+    timeout:"0",
+    follow: "0",
+    eventos: {
+    	["fim!"]
+    }
+}
+
+devolvido {
+	cpfs: {[
+	"",""
+    ]},
+    timeout:"0",
+    follow: "0",
+    eventos: {
+    	["fim!"]
+    }
+}
+
