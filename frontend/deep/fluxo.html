@@ -131,12 +131,21 @@ html, body, #canvas, #canvas > div {
                 -->
 
                 <title>custom elements example - bpmn-js-examples</title>
+                <style>
+                        *, *::before, *::after {
+                                box-sizing : border-box;
+                                margin: 0;
+                                padding: 0;
+                        }
+                </style>
         </head>
         <body>
-
-                <h1>Configuracao da Estrategia de Cobranca</h1>
+                <div style="background : #3B5999 url('/i/header.jpg') top left no-repeat ; height: 50px">
+                        <h1 style="padding-top: 5px; margin-left: 200px; color:white">Configuracao da Estrategia de Cobranca</h1>
+                </div>
 
                 <div id="canvas"></div>
+
 
                 <div id="dialogo_validacao_whatsapp" title="Validacao de Cliente via Whatsapp">
                         <p>
